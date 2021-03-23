@@ -10,7 +10,7 @@ class Youtube extends Component {
 
   componentDidMount() {
     fetch(
-      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyBCTE_1kvI1JuO10g3RQnLLhCPq6Y6wApM&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
+      "https://www.googleapis.com/youtube/v3/search?&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
     )
       .then((response) => response.json())
       .then((data) => {
